@@ -32,6 +32,5 @@ static void __exit skeleton_exit(void)
 /**
  * Register initialization and exit functions of the module
 */
-mod
 module_init(skeleton_init);
 module_exit(skeleton_exit);
