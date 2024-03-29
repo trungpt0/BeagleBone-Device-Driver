@@ -6,11 +6,12 @@
  * Module Information
 */
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("trungnpt0");
+MODULE_AUTHOR("trungpt0");
 MODULE_DESCRIPTION("A skeleton device driver");
+MODULE_VERSION("1.0");
 
 /**
- * Module Init
+ * Module initialization function
 */
 static int __init skeleton_init(void)
 {
@@ -20,7 +21,7 @@ static int __init skeleton_init(void)
 }
 
 /**
- * Module Exit
+ * Module exit function
 */
 static void __exit skeleton_exit(void)
 {
@@ -28,5 +29,9 @@ static void __exit skeleton_exit(void)
     pr_info("Kernel Module Removed Successfully!\n");
 }
 
+/**
+ * Register initialization and exit functions of the module
+*/
+mod
 module_init(skeleton_init);
 module_exit(skeleton_exit);
